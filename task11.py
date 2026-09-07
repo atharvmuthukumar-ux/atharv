@@ -1,8 +1,8 @@
 import math
 txt=input("Enter the paragraph to be tested: ")
 sentence_count=txt.count('.')+txt.count('!')+txt.count('?')
-word_count=txt.count(' ')+(txt.count('.')-(sentence_count-1))+txt.count('-')
-character_count=len(txt) - txt.count(' ') - txt.count('.') - txt.count('-')
+word_count=txt.count(' ')+txt.count('-')+1
+character_count=len(txt) - txt.count(' ') - sentence_count - txt.count('-') - txt.count(',') - txt.count(';') - txt.count(':') - txt.count('/') - txt.count('(') - txt.count(')') - txt.count('{') - txt.count('}') - txt.count('[') - txt.count(']')
 L=(character_count/word_count)
 S=(sentence_count/word_count)
 CLI=(0.0588*L*100)-(100*0.296*S)-(15.8)
