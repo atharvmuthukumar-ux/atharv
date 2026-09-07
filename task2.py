@@ -1,0 +1,5 @@
+str=input("Enter a string: ")
+sorted_str=sorted(str)
+count=len(str)
+print("Sorted string:", ''.join(sorted_str))
+print("Number of characters:", count)
