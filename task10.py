@@ -12,8 +12,8 @@ def luhns(cardno):
             digit2=digit2+r
         sum=digit1+digit2+sum
     if(sum%10==0):
-        print("yuh")
+        print("It is a valid card number")
     else:
-        print("nuh")
+        print("No, it is not a valid card number")
 card=int(input("Enter card number: "))
 luhns(card)
